@@ -1,0 +1,238 @@
+/* Base Styles */
+body {
+    font-family: monospace, sans-serif;
+    color: #3e5b5e;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    background-color: #edf6f7;
+    transition: background 0.3s ease-in-out;
+}
+
+h2 {
+    margin: 0;
+    color: #3e5b5e;
+}
+
+h3 {
+    font-size: 13px;
+    color: #3e5b5e;
+}
+
+p {
+    font-size: 11px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* CONFIRM button */
+.confirm-button {
+    background-color: #F6E6E4;
+    color: #324f53;
+    font-family: monospace, sans-serif;
+    font-size: 11px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.confirm-button:hover {
+    background-color: #F4D7D4;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 38px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "naw";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    color: rgb(136, 125, 125);
+}
+
+/* WHEN TOGGLED ON */
+input:checked + .slider {
+    background-color: #eecbc7;
+}
+
+input:checked + .slider:before {
+    transform: translateX(32px);
+    content: "yay";
+    color: #dfb4af;
+}
+
+/* TOGGLE DESCRIPTION */
+.toggle-desc {
+    font-size: 11px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* DEPARTURE LOCATION */
+.section {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leave {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.departure-button {
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #3e5b5e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.departure-button.active {
+    background-color: #F6E6E4;
+    border-color: #F6E6E4;
+    color: #3e5b5e;
+}
+
+.departure-button:hover {
+    background-color: #F4D7D4;
+    border-color: #F4D7D4;
+}
+
+/* TIME SETTINGS */
+
+#day {
+    font-family: monospace, sans-serif;
+    font-size: 11px;
+    color: #3e5b5e;
+    padding: 5px;
+}
+
+#timeSettings {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 40px;
+    padding: 3px;
+    font-size: 11px;
+    font-family: monospace, sans-serif;
+    text-align: center;
+    border: 1.75px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #F4D7D4;
+}
+
+.hour, .minute {
+    font-family: monospace, sans-serif;
+    font-size: 11px;
+}
+
+/* AM/PM SELECTOR */
+#ampm-switch {
+    display: flex;
+    width: 100px;
+    margin: 10px auto;
+    border: 1.5px solid #ccc;
+}
+
+.ampm-option {
+    flex: 1;
+    padding: 3px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #3e5b5e;
+    font-size: 11px;
+    transition: 0.3s ease;
+    border-right: 1px solid #ccc;
+}
+
+.ampm-option:last-child {
+    border-right: none;
+}
+
+.ampm-option.active {
+    background-color: #F6E6E4;
+}
+
+.ampm-option:hover {
+    background-color: #F4D7D4;
+}
+
+
+
+/* COLOR PALETTE 
+background: #e4f4f6;
+button: #F4D7D4;
+button-hover: #e6bdb8;
+switch: #ccc;   
+switch-on: #F4D7D4;
+time-settings: #ffffff;
+time-settings-shadow: rgba(0, 0, 0, 0.1);
+time-settings-border: #ccc;
+time-settings-border-focus: #F4D7D4;
+ampm-switch-border: #ccc;
+ampm-option: #F4D7D4;
+ampm-option-hover: #e6bdb8;
+ampm-option-active: #F4D7D4;
+ampm-option-active-text: white;
+*/

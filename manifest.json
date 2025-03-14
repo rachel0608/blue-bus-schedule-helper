@@ -1,0 +1,27 @@
+{
+    "name": "Blue Bus Schedule Helper",
+    "version": "1.0",
+    "description": "A Chrome extension that helps you find the next bus schedule for the Blue Bus.",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab", "storage", "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.brynmawr.edu/inside/offices-services/transportation/blue-bus-bi-co"],
+            "js": ["content.js"]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Bus Tracker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h2>blue bus tracker</h2>
+    <br>
+
+    <!-- TOGGLE SWITCH -->
+    <div class="section">
+    <h3>find next bus</h3>
+    <label class="switch">
+        <input type="checkbox" id="mainToggleSwitch">
+        <span class="slider"></span>
+    </label>
+    <br>
+    <br>
+
+    <!-- DEPARTURE LOCATION -->
+    <p class="toggle-desc">depart from</p>
+        <div class="button-group">
+            <button id="bmcButton" class="departure-button">BMC</button>
+            <button id="hcButton" class="departure-button">HC</button>
+        </div>
+    </div>
+
+    <!-- TIME SETTINGS -->
+    <label>
+        <input type="checkbox" id="customTimeCheckbox"> 
+        use custom time
+    </label>
+    
+    <div id="timeSettings" style="display: none;">
+        <h3>custom time settings</h3>
+        <p>find the next bus on...</p>
+        <br>
+        <label for="day"></label>
+            <select id="day">
+                <option>monday</option>
+                <option>tuesday</option>
+                <option>wednesday</option>
+                <option>thursday</option>
+                <option>friday</option>
+                <option>saturday</option>
+                <option>sunday</option>
+            </select>
+        <br>
+        <br>
+
+        <input type="text" id="hour" maxlength="2" placeholder="HH">
+        <label for="minute">:</label>
+        <input type="text" id="minute" maxlength="2" placeholder="MM">
+        <br>
+
+        <!-- AM/PM SWITCH -->
+        <div id="ampm-switch">
+            <span class="ampm-option" id="am">am</span>
+            <span class="ampm-option" id="pm">pm</span>
+        </div>
+
+        <button class="confirm-button" id="confirm-btn">set time</button>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
