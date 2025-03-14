@@ -162,6 +162,12 @@ function getBusRows(table) {
  * @returns {Date|null}
  */
 function parseTime(tableDayIndex, timeStr, now) {
+    // Check if the time string contains an ampersand (for "9:30a & 9:40a" format)
+    if (timeStr.includes('&')) {
+        const timeParts = timeStr.split('&').map(part => part.trim());
+        timeStr = timeParts[1];
+    }
+
     const match = timeStr.match(/(\d+):(\d+)(a|p)/);
     if (!match) return null;
 
