@@ -1,0 +1,29 @@
+Privacy Policy
+
+Effective Date: March 13rd, 2025
+
+We are committed to protecting your privacy. This privacy policy explains how we handle your personal information when you use our Chrome extension.
+
+No Personal or Sensitive Data Collection
+
+We want to make it clear that [Your Extension Name] **does not collect, store, or share any personal or sensitive user data**. The extension does not track, monitor, or collect any data related to your personal identity, browsing history, or other sensitive information.
+
+What We Do Collect
+
+Our extension does not collect any personal information or other data from your device. We do not request or require any form of personally identifiable information (PII), such as names, email addresses, or payment details, to function.
+
+How the Extension Works
+
+[Briefly describe how your extension works and what it does—e.g., "Our extension interacts with specific websites to modify or display content, but it does so without storing any user data."]
+
+Third-Party Services
+
+Our extension does not use any third-party services that collect user data.
+
+Changes to This Privacy Policy
+
+We may update this privacy policy from time to time to reflect any changes in our practices or legal requirements. Any updates will be posted here, with an updated effective date.
+
+Contact Us
+
+If you have any questions or concerns about this privacy policy or the extension, feel free to contact us at cnguyen@brynmawr.edu.
