@@ -1,6 +1,9 @@
 # Blue Bus Schedule Helper
 
-This Chrome extension helps you quickly find the next available Blue Bus departure time without manual search on the bus schedule page. Here's what it can do:
+This Chrome extension helps you quickly find the next available Blue Bus departure time without manual search on the bus schedule page. 
+
+![Demo Picture](https://github.com/rachel0608/blue-bus-schedule-helper/blob/main/images/demo.png?raw=true)
+
 
 ## Features
 
